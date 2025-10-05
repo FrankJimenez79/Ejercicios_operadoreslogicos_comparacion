@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de operadores logicos y de comparacion</title>
+    <meta
+      name="description"
+      content="Ejercicios de operadores logicos y de comparacion"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /*2 Número dentro de rango
+
+      Crear un programa que pida al usuario ingresar un número que
+      represente el límite inferior del rango, uno que represente el límite mayor, 
+      y luego otro cualquiera y mostrar en un mensaje si el último número
+      se encuentra dentro del rango ingresado.*/
+
+      let limiteInferior = Number(
+        prompt("Ingresa el numero de rango inferior:")
+      );
+      let limiteMayor = Number(prompt("Ingresa el numero de rango mayor:"));
+      let numeroCualquiera = Number(prompt("Ingresa otro numero cualquiera:"));
+
+      if (
+        numeroCualquiera >= limiteInferior &&
+        numeroCualquiera <= limiteMayor
+      ) {
+        alert(
+          `El numero ${numeroCualquiera} esta dentro del rango de ${limiteInferior} y ${limiteMayor}.`
+        );
+      } else {
+        alert(`El numero ${numeroCualquiera} esta fuera de rango.`);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Ejercicio 2</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Volver atras</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>

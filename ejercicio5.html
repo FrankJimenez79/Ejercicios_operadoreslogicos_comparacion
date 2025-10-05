@@ -23,17 +23,32 @@
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 5 Mantenimiento
+
+      Hacer un programa que pregunte por separado si el auto tiene aceite, 
+      agua, y neumáticos con presión. Mostrar en un mensaje si tiene que hacer 
+      mantenimiento o no si alguna de las respuestas es negativa*/
+
+      let aceite = confirm("Tiene el auto aceite?");
+      let agua = confirm("Tiene el auto agua?");
+      let presionNeumaticos = confirm(
+        "Esta bien la presion de los neumaticos?"
+      );
+
+      if (aceite === false || agua === false || presionNeumaticos === false) {
+        alert(`Usted tiene que hacer el mantenimiento del auto.`);
+      } else {
+        alert(`No tiene que hacer mantenimiento del auto.`);
+      }
+    </script>
   </head>
 
   <body>
-    <h1>Ejercicios de operadores logicos y de comparacion</h1>
+    <h2>Ejercicio 5</h2>
     <nav>
       <ul>
-        <li><a href="ejercicio1.html">Ejercicio 1</a></li>
-        <li><a href="ejercicio2.html">Ejercicio 2</a></li>
-        <li><a href="ejercicio3.html">Ejercicio 3</a></li>
-        <li><a href="ejercicio4.html">Ejercicio 4</a></li>
-        <li><a href="ejercicio5.html">Ejercicio 5</a></li>
+        <li><a href="index.html">Volver atras</a></li>
       </ul>
     </nav>
   </body>

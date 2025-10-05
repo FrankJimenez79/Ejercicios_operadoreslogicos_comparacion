@@ -23,17 +23,32 @@
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 4 Autenticación
+
+      Crear un programa que pida ingresar el usuario y la contraseña
+      y los compare con el usuario y contraseña guardados en variables, y
+      muestre en un mensaje si tiene el acceso autorizado*/
+
+      let usuarioReal = "Martina";
+      let contrasenaReal = "31081979Martina@";
+
+      let usuario = prompt("Introduce tu nombre de usuario:");
+      let contrasena = prompt("Introduce tu contraseña:");
+
+      if (usuario === usuarioReal && contrasena === contrasenaReal) {
+        alert(`Bienvenido, usuario y contraseña correcta.`);
+      } else {
+        alert(`Lo siento nombre de usuario o contraseña no coinciden.`);
+      }
+    </script>
   </head>
 
   <body>
-    <h1>Ejercicios de operadores logicos y de comparacion</h1>
+    <h2>Ejercicio 4</h2>
     <nav>
       <ul>
-        <li><a href="ejercicio1.html">Ejercicio 1</a></li>
-        <li><a href="ejercicio2.html">Ejercicio 2</a></li>
-        <li><a href="ejercicio3.html">Ejercicio 3</a></li>
-        <li><a href="ejercicio4.html">Ejercicio 4</a></li>
-        <li><a href="ejercicio5.html">Ejercicio 5</a></li>
+        <li><a href="index.html">Volver atras</a></li>
       </ul>
     </nav>
   </body>
