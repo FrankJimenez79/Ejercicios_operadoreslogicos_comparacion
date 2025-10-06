@@ -23,23 +23,34 @@
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 10 Términos y condiciones de uso
+
+      Crear un programa que pregunte si acepta los términos y 
+      condiciones de uso. Si el usuario responde que sí, debe mostrar un 
+      mensaje que diga "Continuando con el proceso...". Si responde que no, 
+      debe mostrar un mensaje que diga "No se puede continuar con el proceso 
+      si no se aceptan los términos y condiciones de uso".*/
+
+      let terminosDeUso = confirm(
+        "Acepta los términos y las condiciones de uso?"
+      );
+
+      if (terminosDeUso === true) {
+        alert(`Continuando con el proceso...`);
+      } else {
+        alert(
+          `No se puede continuar con el proceso si no aceptan los términos y las condiciones de uso.`
+        );
+      }
+    </script>
   </head>
 
   <body>
-    <h1>Ejercicios de operadores logicos y de comparacion</h1>
+    <h2>Ejercicio 10</h2>
     <nav>
       <ul>
-        <li><a href="ejercicio1.html">Ejercicio 1</a></li>
-        <li><a href="ejercicio2.html">Ejercicio 2</a></li>
-        <li><a href="ejercicio3.html">Ejercicio 3</a></li>
-        <li><a href="ejercicio4.html">Ejercicio 4</a></li>
-        <li><a href="ejercicio5.html">Ejercicio 5</a></li>
-        <li><a href="ejercicio6.html">Ejercicio 6</a></li>
-        <li><a href="ejercicio7.html">Ejercicio 7</a></li>
-        <li><a href="ejercicio8.html">Ejercicio 8</a></li>
-        <li><a href="ejercicio9.html">Ejercicio 9</a></li>
-        <li><a href="ejercicio10.html">Ejercicio 10</a></li>
-        <li><a href="ejercicio11.html">Ejercicio 11</a></li>
+        <li><a href="index.html">Volver atras</a></li>
       </ul>
     </nav>
   </body>

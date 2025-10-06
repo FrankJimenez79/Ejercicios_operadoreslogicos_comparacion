@@ -23,23 +23,34 @@
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 7 Cátedra promocionada
+
+      Hacer un programa que pida ingresar los valores de los tres parciales 
+      de la cátedra mostrar un mensaje indicando si promociona o no la cátedra. 
+      La misma se promociona si al menos dos de ellos fueron aprobados con una nota de 8 o más.*/
+
+      let parcial1 = Number(prompt(`Introduce la nota del primer parcial:`));
+      let parcial2 = Number(prompt(`Introduce la nota del segundo parcial:`));
+      let parcial3 = Number(prompt(`Introduce la nota del tercer parcial:`));
+
+      if (
+        (parcial1 >= 8 && parcial2 >= 8) ||
+        (parcial1 >= 8 && parcial3 >= 8) ||
+        (parcial2 >= 8 && parcial3 >= 8)
+      ) {
+        alert(`Felicidades. Has promocionado la catedra`);
+      } else {
+        alert(`Lo siento. No has promocionado.`);
+      }
+    </script>
   </head>
 
   <body>
-    <h1>Ejercicios de operadores logicos y de comparacion</h1>
+    <h2>Ejercicio 7</h2>
     <nav>
       <ul>
-        <li><a href="ejercicio1.html">Ejercicio 1</a></li>
-        <li><a href="ejercicio2.html">Ejercicio 2</a></li>
-        <li><a href="ejercicio3.html">Ejercicio 3</a></li>
-        <li><a href="ejercicio4.html">Ejercicio 4</a></li>
-        <li><a href="ejercicio5.html">Ejercicio 5</a></li>
-        <li><a href="ejercicio6.html">Ejercicio 6</a></li>
-        <li><a href="ejercicio7.html">Ejercicio 7</a></li>
-        <li><a href="ejercicio8.html">Ejercicio 8</a></li>
-        <li><a href="ejercicio9.html">Ejercicio 9</a></li>
-        <li><a href="ejercicio10.html">Ejercicio 10</a></li>
-        <li><a href="ejercicio11.html">Ejercicio 11</a></li>
+        <li><a href="index.html">Volver atras</a></li>
       </ul>
     </nav>
   </body>

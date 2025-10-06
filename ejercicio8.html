@@ -23,23 +23,32 @@
 
     <link rel="manifest" href="site.webmanifest" />
     <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 8 Número más grande (2 números)
+
+      Hacer un programa que pida ingresar 2 números, y 
+      muestre como resultado el más grande de ellos. Una vez hecho esto, 
+      agregar la funcionalidad de que si alguno de los números es igual a otro, 
+      debe mostrar un mensaje diciéndolo.*/
+
+      let numero1 = Number(prompt("Introduce el primer numero:"));
+      let numero2 = Number(prompt("Introduce el segundo numero:"));
+
+      if (numero1 === numero2) {
+        alert(`El numero ${numero1} es igual al numero ${numero2}`);
+      } else if (numero1 > numero2) {
+        alert(`El numero ${numero1} es mas grande que el numero ${numero2}`);
+      } else {
+        alert(`El numero ${numero2} es mas grande que el numero ${numero1}`);
+      }
+    </script>
   </head>
 
   <body>
-    <h1>Ejercicios de operadores logicos y de comparacion</h1>
+    <h2>Ejercicio 8</h2>
     <nav>
       <ul>
-        <li><a href="ejercicio1.html">Ejercicio 1</a></li>
-        <li><a href="ejercicio2.html">Ejercicio 2</a></li>
-        <li><a href="ejercicio3.html">Ejercicio 3</a></li>
-        <li><a href="ejercicio4.html">Ejercicio 4</a></li>
-        <li><a href="ejercicio5.html">Ejercicio 5</a></li>
-        <li><a href="ejercicio6.html">Ejercicio 6</a></li>
-        <li><a href="ejercicio7.html">Ejercicio 7</a></li>
-        <li><a href="ejercicio8.html">Ejercicio 8</a></li>
-        <li><a href="ejercicio9.html">Ejercicio 9</a></li>
-        <li><a href="ejercicio10.html">Ejercicio 10</a></li>
-        <li><a href="ejercicio11.html">Ejercicio 11</a></li>
+        <li><a href="index.html">Volver atras</a></li>
       </ul>
     </nav>
   </body>

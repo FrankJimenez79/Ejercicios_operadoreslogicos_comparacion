@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de operadores logicos y de comparacion</title>
+    <meta
+      name="description"
+      content="Ejercicios de operadores logicos y de comparacion"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 9 Número más grande (3 números)
+
+      Hacer un programa que pida ingresar 3 números, y muestre 
+      como resultado el más grande de ellos. Una vez hecho esto, 
+      agregar la funcionalidad de que si alguno de los números es 
+      igual a otro, debe mostrar un mensaje diciéndolo.*/
+
+      let numero1 = Number(prompt("Introduce el primer numero:"));
+      let numero2 = Number(prompt("Introduce el segundo numero:"));
+      let numero3 = Number(prompt("Introduce el tercer numero:"));
+
+      if (numero1 === numero2 || numero1 === numero3 || numero2 === numero3) {
+        alert(`Hay numeros que son iguales`);
+      } else if (numero1 > numero2 && numero1 > numero3) {
+        alert(`El numero ${numero1} es el mayor de todos`);
+      } else if (numero2 > numero1 && numero2 > numero3) {
+        alert(`El numero ${numero2} es el mayor de todos.`);
+      } else {
+        alert(`El numero ${numero3} es el mayor de todos.`);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Ejercicio 9</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Volver atras</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
