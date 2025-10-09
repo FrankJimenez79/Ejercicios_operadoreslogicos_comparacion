@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Ejercicios de operadores logicos y de comparacion</title>
+    <meta
+      name="description"
+      content="Ejercicios de operadores logicos y de comparacion"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="" />
+    <meta property="og:url" content="" />
+    <meta property="og:image" content="" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="icon.png" />
+
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <meta name="theme-color" content="#fafafa" />
+    <script>
+      /* 13 Juez de gusto
+
+      Crear un programa que pida al usuario evaluar del 1 al 10 cuánto le 
+      gusta X cosa (a elección). Dependiendo de la respuesta, debe mostrar 
+      un mensaje en consonancia. Hacer mínimo 4 casos posibles. Si se ingresa 
+      algo que no sea un número del 1 al 10, mostrar un mensaje de advertencia 
+      y volver a pedir dicho número.*/
+
+      let evaluacion = Number(prompt("Evalue del 1 al 10 su experiencia:"));
+
+      while (isNaN(evaluacion) || evaluacion < 1 || evaluacion > 10) {
+        alert(`Evaluacion incorrecta vuelve a introducir el numero:`);
+        evaluacion = Number(prompt("Evalue del 1 al 10 su experiencia:"));
+      }
+
+      if (evaluacion === 1 || evaluacion === 2 || evaluacion === 3) {
+        alert(`Sentimos que la experiencia no haya sido de su agrado.`);
+      } else if (evaluacion === 4 || evaluacion === 5) {
+        alert(`Gracias por confiar en nosotros. En que podriamos mejorar`);
+      } else if (evaluacion === 6 || evaluacion === 7 || evaluacion === 8) {
+        alert(`Nos alegramos de que haya sido de su agrado.`);
+      } else if (evaluacion === 9 || evaluacion === 10) {
+        alert(
+          `Excelente. gracias por confiar en nosotros. Nos alegramos mucho.`
+        );
+      } else {
+        alert(`Lo siento no ha introducido una avaluacion correcta.`);
+      }
+    </script>
+  </head>
+
+  <body>
+    <h2>Ejercicio 13</h2>
+    <nav>
+      <ul>
+        <li><a href="index.html">Volver atras</a></li>
+      </ul>
+    </nav>
+  </body>
+</html>
